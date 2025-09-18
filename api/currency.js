@@ -1,5 +1,6 @@
-// api/currency.js
+
 export default function handler(req, res) {
+  
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
   const { from, value, rates } = req.body ?? {};
   if (from !== 'USD' || typeof value !== 'number') return res.status(400).json({ error: 'from must be "USD" and value number' });

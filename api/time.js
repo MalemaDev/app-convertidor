@@ -1,5 +1,6 @@
-// api/time.js
+
 export default function handler(req, res) {
+  
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
   const { from, value } = req.body ?? {};
   if (typeof value !== 'number') return res.status(400).json({ error: 'value must be number' });
