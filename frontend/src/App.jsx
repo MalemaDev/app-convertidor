@@ -7,7 +7,7 @@ export default function App() {
   const [tab, setTab] = useState('time');
   return (
     <div style={{ maxWidth: 900, margin: '2rem auto', padding: 20 }}>
-      <h1>Convertidor (React + Node)</h1>
+      <h1>Convertidor (React + Node 👀)</h1>
       <nav style={{ marginBottom: 20 }}>
         <button onClick={() => setTab('time')}>Tiempo</button>
         <button onClick={() => setTab('weight')}>Peso</button>
